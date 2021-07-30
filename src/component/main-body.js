@@ -22,7 +22,11 @@ export const getIdFunc = (event) => {
     // console.log(window.arrData);
     const markup = mainBody(event.target.id, window.arrData);
 
+    const el = document.getElementsByClassName('main-container')[0];
     const root = document.getElementById('root');
-    root.innerHTML = "";
-    root.appendChild(markup);
+    // root.innerHTML = "";
+    root.replaceChild(markup, el);
+    // console.log(markup.innerHTML);
+
+    // root.appendChild(markup);
 };
