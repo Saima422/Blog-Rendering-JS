@@ -1,28 +1,41 @@
+$background-color: #E8F6EF;
+// $background: #02356bd5;
+$background: #B8DFD8;
+$color: #013162;
+$hover: #4C4C6D;
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    font-family: 'Merienda', cursive;
+    }
 
 .main-container{
+  background-color: $background;
     width: 100%;
-    border: 3px solid red;
+    // border: 3px solid red;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 
     .blog-container{
         width: 60%;
-        border: 3px solid green;
+        // border: 3px solid green;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-content: center;
+        margin: 50px 0px;
+        background-color: $background-color;
+        color: $color;
+        box-shadow: 0 3px 10px $color;
 
         .blog-heading{
             text-align: center;
             font-size: 2rem;
             margin: 40px 0;
+            padding: 0px 30px;
         }
 
         .blog-author{
@@ -38,14 +51,18 @@
         .blog-para{
             margin: 10px 50px 40px;
             font-size: 1.1rem;
+            word-spacing: 2;
             text-align: justify;
         }
     }
 
     .aside-container{
-        border: 2px solid green;
+        // border: 2px solid green;
         width: 25%;
-        margin: 40px 0px;
+        margin: 50px 0px;
+        background-color: $background-color;
+        color: $color;
+        box-shadow: 0 3px 10px $color;
         padding-bottom: 30px;
         // position: sticky;
 
@@ -66,7 +83,8 @@
                 text-align: justify;
             
                 &:hover{
-                    color: green;
+                    color: black;
+                    border-bottom: 1px solid $color;
                 }
             }
         }
@@ -74,16 +92,21 @@
 }
 
 .navigation {
-    background-color: #f3f9fa;
+    background-color: $background-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    // border: 2px solid red;
+    border-bottom: 1px solid $color;
+    // box-shadow: 0 10px 10px -10px black !important;
   }
   
   .company-logo {
+    margin-top: -10px;
     width: 150px;
+    height: 70px;
   }
   
   .logo {
@@ -107,19 +130,25 @@
   
   .nav-link {
     text-decoration: none;
-    color: black;
+    color: $color;
     font-size: 1.2rem;
+    // font-weight: 600;
+
+    &:hover{
+      border-bottom: 3px solid $hover;
+    }
   }
   
   .btn {
     padding: 8px 20px;
-    background-color: black;
+    background-color: $color;
     border-radius: 15px;
     color: white;
   }
   
   .btn:hover {
-    background-color: rgba(61, 59, 59, 0.815);
+    background-color: $hover;
+    border: none;
   }
 
   .hamburger-menu {
@@ -145,7 +174,7 @@
     .open-nav {
       display: flex;
       width: 100%;
-      border-top: 1px solid black;
+      // border-top: 1px solid black;
       flex-direction: column;
       justify-content: space-evenly;
     }
@@ -158,12 +187,14 @@
 
   .footer{
     width:100%;
-    background-color: #d2f1f7;
+    background-color: $background-color;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid $color;
 
     .footer-logo{
-      width: 150px;
+      width: 100px;
+      margin-left: 20px;
     }
 
     .footer-links-container{
@@ -182,11 +213,11 @@
   
         .footer-link{
           text-decoration: none;
-          color: black;
+          color: $color;
           font-size: 1.2rem;
   
           &:hover{
-            color: grey;
+            color: $hover;
           }
         }
       }

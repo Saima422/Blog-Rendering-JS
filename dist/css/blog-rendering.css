@@ -2,11 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Merienda', cursive;
 }
 
 .main-container {
+  background-color: #B8DFD8;
   width: 100%;
-  border: 3px solid red;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -14,17 +15,21 @@
 
 .main-container .blog-container {
   width: 60%;
-  border: 3px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
+  margin: 50px 0px;
+  background-color: #E8F6EF;
+  color: #013162;
+  box-shadow: 0 3px 10px #013162;
 }
 
 .main-container .blog-container .blog-heading {
   text-align: center;
   font-size: 2rem;
   margin: 40px 0;
+  padding: 0px 30px;
 }
 
 .main-container .blog-container .blog-author {
@@ -40,13 +45,16 @@
 .main-container .blog-container .blog-para {
   margin: 10px 50px 40px;
   font-size: 1.1rem;
+  word-spacing: 2;
   text-align: justify;
 }
 
 .main-container .aside-container {
-  border: 2px solid green;
   width: 25%;
-  margin: 40px 0px;
+  margin: 50px 0px;
+  background-color: #E8F6EF;
+  color: #013162;
+  box-shadow: 0 3px 10px #013162;
   padding-bottom: 30px;
 }
 
@@ -65,20 +73,24 @@
 }
 
 .main-container .aside-container .aside-link .aside-anchor:hover {
-  color: green;
+  color: black;
+  border-bottom: 1px solid #013162;
 }
 
 .navigation {
-  background-color: #f3f9fa;
+  background-color: #E8F6EF;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid #013162;
 }
 
 .company-logo {
+  margin-top: -10px;
   width: 150px;
+  height: 70px;
 }
 
 .logo {
@@ -103,19 +115,24 @@
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: #013162;
   font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #4C4C6D;
 }
 
 .btn {
   padding: 8px 20px;
-  background-color: black;
+  background-color: #013162;
   border-radius: 15px;
   color: white;
 }
 
 .btn:hover {
-  background-color: rgba(61, 59, 59, 0.815);
+  background-color: #4C4C6D;
+  border: none;
 }
 
 .hamburger-menu {
@@ -139,7 +156,6 @@
   .open-nav {
     display: flex;
     width: 100%;
-    border-top: 1px solid black;
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -150,13 +166,15 @@
 
 .footer {
   width: 100%;
-  background-color: #d2f1f7;
+  background-color: #E8F6EF;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #013162;
 }
 
 .footer .footer-logo {
-  width: 150px;
+  width: 100px;
+  margin-left: 20px;
 }
 
 .footer .footer-links-container {
@@ -178,11 +196,11 @@
 
 .footer .footer-links-container .footer-item .footer-link {
   text-decoration: none;
-  color: black;
+  color: #013162;
   font-size: 1.2rem;
 }
 
 .footer .footer-links-container .footer-item .footer-link:hover {
-  color: grey;
+  color: #4C4C6D;
 }
 /*# sourceMappingURL=blog-rendering.css.map */

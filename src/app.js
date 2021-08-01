@@ -3,7 +3,7 @@ import { Navigation } from "./component/navigation.js";
 import { footer } from "./component/footer.js";
 
 const dataUrl = "https://niravkpatel28.github.io/json-data-server/blogs/blogs.json";
-const navFooterUrl = "https://saima422.github.io/Image-JSON-Data-Repo/json-data/json-data.json";
+const navFooterUrl = "https://saima422.github.io/Image-JSON-Data-Repo/json-data/blog-rendering.json";
 
 const root = document.getElementById('root');
 
