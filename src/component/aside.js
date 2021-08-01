@@ -18,6 +18,7 @@ export const aside = (dataObj) => {
         const anchor = document.createElement('a');
         anchor.classList.add('aside-anchor');
         anchor.id = item.id;
+        anchor.href = '#';
         anchor.innerText = item.title;
         anchor.addEventListener('click', getIdFunc);
         // para.setAttribute('onclick', `getIdFunc()`);

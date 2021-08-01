@@ -98,6 +98,8 @@ html{
             margin: 20px auto;
             
             .aside-anchor{
+                text-decoration: none;
+                color: $color;
                 text-align: justify;
             
                 &:hover{

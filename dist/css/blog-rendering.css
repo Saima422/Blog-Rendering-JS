@@ -104,6 +104,8 @@ html {
 }
 
 .main-container .aside-container .aside-link .aside-anchor {
+  text-decoration: none;
+  color: #013162;
   text-align: justify;
 }
 
