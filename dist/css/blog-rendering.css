@@ -5,12 +5,23 @@
   font-family: 'Merienda', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-container {
   background-color: #B8DFD8;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+@media (max-width: 1090px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main-container .blog-container {
@@ -23,6 +34,18 @@
   background-color: #E8F6EF;
   color: #013162;
   box-shadow: 0 3px 10px #013162;
+}
+
+@media (max-width: 1090px) {
+  .main-container .blog-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-container .blog-container {
+    width: 90%;
+  }
 }
 
 .main-container .blog-container .blog-heading {
@@ -58,6 +81,18 @@
   padding-bottom: 30px;
 }
 
+@media (max-width: 1090px) {
+  .main-container .aside-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-container .aside-container {
+    width: 90%;
+  }
+}
+
 .main-container .aside-container .aside-heading {
   text-align: center;
   margin: 30px;
@@ -85,6 +120,13 @@
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #013162;
+}
+
+.nav-text {
+  color: #013162;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .company-logo {
@@ -150,6 +192,9 @@
   .hamburger-menu {
     display: unset;
   }
+  .nav-text {
+    padding: 20px 0;
+  }
   .nav-container {
     display: none;
   }
@@ -202,5 +247,66 @@
 
 .footer .footer-links-container .footer-item .footer-link:hover {
   color: #4C4C6D;
+}
+
+.section-container {
+  background-color: #B8DFD8;
+}
+
+.section-container .contact {
+  color: #013162;
+  background-color: #E8F6EF;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  padding: 30px;
+  box-shadow: 0 3px 10px #013162;
+}
+
+@media (max-width: 550px) {
+  .section-container .contact {
+    width: 90%;
+  }
+}
+
+.section-container .contact .contact-heading {
+  text-align: center;
+}
+
+.section-container .contact .contact-text {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-container .contact .contact-input {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 30px;
+  border: 2px solid #013162;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .section-container .contact .contact-input {
+    width: 100%;
+  }
+}
+
+.section-container .contact .contact-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #013162;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.section-container .contact .contact-submit:hover {
+  background-color: #4C4C6D;
 }
 /*# sourceMappingURL=blog-rendering.css.map */

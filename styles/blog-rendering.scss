@@ -1,5 +1,4 @@
 $background-color: #E8F6EF;
-// $background: #02356bd5;
 $background: #B8DFD8;
 $color: #013162;
 $hover: #4C4C6D;
@@ -11,17 +10,26 @@ $hover: #4C4C6D;
     font-family: 'Merienda', cursive;
     }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .main-container{
   background-color: $background;
     width: 100%;
-    // border: 3px solid red;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 
+    @media (max-width: 1090px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+
     .blog-container{
         width: 60%;
-        // border: 3px solid green;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -30,6 +38,14 @@ $hover: #4C4C6D;
         background-color: $background-color;
         color: $color;
         box-shadow: 0 3px 10px $color;
+
+        @media (max-width: 1090px) {
+          width: 80%;
+        }
+
+        @media (max-width: 550px) {
+          width: 90%;
+        }
 
         .blog-heading{
             text-align: center;
@@ -57,14 +73,20 @@ $hover: #4C4C6D;
     }
 
     .aside-container{
-        // border: 2px solid green;
         width: 25%;
         margin: 50px 0px;
         background-color: $background-color;
         color: $color;
         box-shadow: 0 3px 10px $color;
         padding-bottom: 30px;
-        // position: sticky;
+
+        @media (max-width: 1090px) {
+          width: 80%;
+        }
+
+        @media (max-width: 550px) {
+          width: 90%;
+        }
 
         .aside-heading{
             text-align: center;
@@ -73,11 +95,7 @@ $hover: #4C4C6D;
 
         .aside-link{
             width: 90%;
-            // text-align: justify;
             margin: 20px auto;
-            // border: 2px solid black;
-            // margin: 20px 0px 20px 70px;
-            // display: block;
             
             .aside-anchor{
                 text-align: justify;
@@ -98,9 +116,14 @@ $hover: #4C4C6D;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    // border: 2px solid red;
     border-bottom: 1px solid $color;
-    // box-shadow: 0 10px 10px -10px black !important;
+  }
+
+  .nav-text{
+    color: $color;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   
   .company-logo {
@@ -132,7 +155,6 @@ $hover: #4C4C6D;
     text-decoration: none;
     color: $color;
     font-size: 1.2rem;
-    // font-weight: 600;
 
     &:hover{
       border-bottom: 3px solid $hover;
@@ -167,6 +189,10 @@ $hover: #4C4C6D;
       display: unset;
     }
 
+    .nav-text{
+      padding: 20px 0;
+    }
+
     .nav-container {
       display: none;
     }
@@ -174,7 +200,6 @@ $hover: #4C4C6D;
     .open-nav {
       display: flex;
       width: 100%;
-      // border-top: 1px solid black;
       flex-direction: column;
       justify-content: space-evenly;
     }
@@ -198,7 +223,6 @@ $hover: #4C4C6D;
     }
 
     .footer-links-container{
-      // border: 2px solid red;
       display: flex;
       width: 30%;
       justify-content: space-around;
@@ -219,6 +243,65 @@ $hover: #4C4C6D;
           &:hover{
             color: $hover;
           }
+        }
+      }
+    }
+  }
+
+
+  .section-container{
+    background-color: $background;
+
+    .contact{
+      color: $color;
+      background-color: $background-color;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      font-size: 1.5rem;
+      padding: 30px;
+      box-shadow: 0 3px 10px $color;
+
+      @media (max-width: 550px) {
+        width: 90%;
+      }
+
+
+      .contact-heading{
+        text-align: center;
+      }
+
+      .contact-text{
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .contact-input{
+        display: block;
+        margin: 20px auto;
+        width: 300px;
+        height: 30px;
+        border: 2px solid $color;
+        text-align: center;
+
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+      }
+
+      .contact-submit{
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        background-color: $color;
+        color: white;
+        border: none;
+        border-radius: 10px;
+
+        &:hover{
+          background-color: $hover;
         }
       }
     }

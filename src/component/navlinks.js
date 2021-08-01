@@ -3,6 +3,11 @@ export const NavLinks = (navData) => {
     const markup = document.createElement('ul');
     markup.classList.add('nav-container');
 
+    const p = document.createElement('p');
+    p.classList.add('nav-text');
+    p.innerText = 'Travel Blogging';
+    markup.appendChild(p);
+
     navData.navLinks.forEach((link) => {
         let liElem = document.createElement('li');
         liElem.classList.add('nav-item');
